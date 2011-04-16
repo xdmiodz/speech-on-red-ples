@@ -1,0 +1,93 @@
+\documentclass[10pt]{beamer}
+\setbeamertemplate{navigation symbols}{}
+\usetheme{Montpellier}
+\usepackage{amsmath,amssymb}
+\usepackage{ragged2e}
+\justifying
+\beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+\usepackage[english, russian]{babel}
+\usepackage{pscyr}
+\renewcommand{\rmdefault}{ftm}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\addto\captions\russian{%
+\renewcommand{\figurename}{}
+\renewcommand{\tablename}{}%
+}
+\renewcommand{\raggedright}{\leftskip=0pt \rightskip=0pt plus 0cm}
+\title[Параметрическая генерация ОНЧ волн в плазме]{Параметрическая генерация низкочастотных волн электронами плазмы, ускоренными в условиях электронного циклотронного резонанса}
+
+\begin{document}
+
+\maketitle
+
+\section{Введение}
+\begin{frame}\frametitle{Актуальность задачи}
+  \small
+  \begin{itemize}
+  \item Магнитосфера Земли представляет собой сложную динамическую систему, способную поддерживать широкий класс волновых явлений, в частности --- волны очень низких частот (ОНЧ). 
+  \item ОНЧ волны, излучаемые искусственными и природными источниками, могут применяться как для диагностики и мониторнинга плазменного окружения Земли~\cite{AWD,IMAGE}, так и активного воздействия на процессы, происходящие в нем~\cite{Demekhov, InanBellBortnik}.
+  \item  Для решения указанных задач актуальным является поиск эффективных методов генерации низкочастотных волн в плазме ближнего космоса. 
+  \end{itemize}
+  \begin{thebibliography}{9}
+    \tiny
+  \bibitem{AWD}\textit{Rodger C.J.,  Lichtenberger J., McDowell G., Thomson N.R.} // Radio Science. 2009. Volume 44, Issue 2. %found
+  \bibitem{IMAGE}\textit{Burch J.L.} // Space Science Reviews. 2000.  Volume 91, pp. 1--14. %found
+  \bibitem{Demekhov}\textit{Demekhov A.G., Trakhtengerts V.Y., Mogilevsky M.M., and Zelenyi L.M.} // Adv.~Sp.~Res. 2003. Volume 32, p. 355. %found
+
+  \bibitem{InanBellBortnik}\textit{Inan U.S., Bell T.F., Bortnik J. et al.} // J.~Geophys.~Res. 2003. Volume 108, p. 1186.%found
+  \end{thebibliography}
+\end{frame}
+
+\begin{frame}\frametitle{Актуальность задачи}
+  \begin{itemize}
+    \small
+    \item Эффективность возбуждения свистовых волн с использованием компактных спутниковых антенных систем невелика вследствие больших длин волн излучения.
+    \item Использование наземных СДВ-станций сопряжено с  серьезными трудностями для поддержания их функциональности, обусловленными, в основном,  большой общей длиной используемых антенн (до 20 км)~\cite{SPBEACON}. 
+      \item  Один из путей повышения эффективности генерации низкочастотных волн состоит в создании протяженных излучающих токовых систем непосредственно  в околоземной плазме~~\cite{Holzworth, HAARP},
+  \end{itemize}
+
+  \begin{thebibliography}{9}
+    \tiny
+    \bibitem{SPBEACON}\textit{Helliwell R.A.} // Rev. of Geophysics. 1988. Volume 26, p. 551. %ground-based ULF radiation system on South Pole
+    \bibitem{Holzworth}\textit{Holzworth R.H., Koons H.C.} // J.~Geophys.~Res. 1981. Volume 86, pp. 853--857 
+
+    \bibitem{HAARP}\textit{Platino M., Inan U.S., Bell T.F., et al.} // Ann.~Geophys. 2004. Volume 22, p. 2643. %found
+   \end{thebibliography}
+\end{frame}
+
+\begin{frame}
+  \begin{columns}
+    \begin{column}{7cm}
+      \small
+В данной работе  предлагается использовать параметрический метод генерации волн свистового диапазона с использованием традиционных антенных систем, размещаемых на КА. Описываемая в работе методика основана  на  нелинейных эффектах, развивающихся в плазме, окружающей антенные системы, под действием мощной ВЧ ($P\sim100$\,Вт) накачки  при приближении рабочей частоты $f$ к <<главным>> резонансным частотам: электронной плазменной $f_{pe}$, электронной циклотронной $f_{ce}$ и их гармоникам. В резонансных условиях возможны возбуждение высокодобротных колебаний в плазме и антенных цепях, нагрев плазмы и генерация потоков ускоренных заряженных частиц~\cite{Galperin}.
+  \end{column}
+  \begin{column}{4cm}
+    \begin{overprint}
+    \begin{figure}
+    \includegraphics[scale=0.5]{ecr_3}
+    \caption{\tiny Сводный график, демонстрирующий генерацию потоков ускоренных частиц при работе бортового передатчика <<Интеркосмос-19>>  в условиях $p=f/f_{ce}$ и $q = f_{pe}/f_{ce}$; точками отмечены положения локальных максимумов тока ускоренных частиц как фунции $(p,q)$}
+    \end{figure}
+    \end{overprint}
+  \end{column}
+  \end{columns}
+  \begin{thebibliography}{9}
+    \tiny
+  \bibitem{Galperin}\textit{Shuiskaya F.K., Galperin Yu.I., Serov A.A., et al.} // Planet.~Sp.~Sci. 1990. Volume 38, p. 173. %found
+
+  \end{thebibliography}
+\end{frame}
+
+\begin{frame}\frametitle{Общая характеристика волн свистового диапазона частот}
+  \small
+  \begin{itemize}
+  \item Волны свистового дипазона представляют собой низкочастотные электромагнитные волны с правой эллиптической поляризацией. Границы свистового диапазона определяются следующими неравенствами:
+    \[\Omega\ll\omega_{LH}<\omega<\omega_{H}\ll\omega_p\]
+Здесь $\Omega_{H}$ --- циклотронная частота ионов, $\omega_{LH}=\left(\Omega_H\omega_H\right)^{1/2}$  --- частота нижнегибридного резонанса. 
+\item Дисперсионное соотношение для волн свистового диапазона при произвольном направлении волнового вектора имеет следующий вид: \[n^2 = \frac{k^2c^2}{\omega^2}=1+\frac{\omega^2_p}{\omega\left(\omega_H\cos\Theta-\omega\right)}\]
+$\Theta$ --- угол между направлением внешенего магнитного поля $\vec{B}$ и волновым вектором свистов $\vec{k}$.
+  \end{itemize}
+\end{frame}
+
+
+\end{document}
