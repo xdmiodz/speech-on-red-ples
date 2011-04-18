@@ -1,6 +1,6 @@
 \documentclass[10pt]{beamer}
 \setbeamertemplate{navigation symbols}{}
-\usetheme{Montpellier}
+\usetheme{Warsaw}
 \usepackage[warn]{mathtext}
 \usepackage{amsmath,amssymb}
 \usepackage{ragged2e}
@@ -25,47 +25,29 @@
 \maketitle
 
 \section{Введение}
-\begin{frame}\frametitle{Роль ОНЧ волн в ионосфере Земли}
+\begin{frame}\frametitle{Роль НЧ волн в околоземной Земли}
   \small
   \begin{itemize}
-  \item Магнитосфера Земли представляет собой сложную динамическую систему, способную поддерживать широкий класс волновых явлений, в частности --- волны очень низких частот (ОНЧ). 
-  \item ОНЧ волны, излучаемые искусственными и природными источниками, могут применяться как для диагностики и мониторнинга плазменного окружения Земли~\cite{AWD,IMAGE}, так и активного воздействия на процессы, происходящие в нем~\cite{Demekhov, InanBellBortnik}.
-    \item Для решения указанных задач актуальным является поиск эффективных методов генерации низкочастотных волн в плазме ближнего космоса. 
-\end{itemize}
-  
-  
+  \item Низкочастотные волны $\left(100\,Гц\div10\,кГц\right)$, излучаемые искусственными и природными источниками, применяются как для диагностики и мониторнинга плазменного окружения Земли~\cite{AWD,IMAGE}, так и активного воздействия на процессы, происходящие в нем~\cite{Demekhov, InanBellBortnik}.
+  \item Эффективность возбуждения свистовых волн с использованием компактных спутниковых антенных систем невелика вследствие больших длин волн излучения.
+  \item  Один из путей повышения эффективности генерации низкочастотных волн состоит в создании протяженных излучающих токовых систем непосредственно  в околоземной плазме~\cite{Holzworth, HAARP}.
+  \end{itemize}
   \begin{thebibliography}{9}
     \tiny
   \bibitem{AWD}\textit{Rodger C.J.,  Lichtenberger J., McDowell G., Thomson N.R.} // Radio Science. 2009. Volume 44, Issue 2. %found
   \bibitem{IMAGE}\textit{Burch J.L.} // Space Science Reviews. 2000.  Volume 91, pp. 1--14. %found
   \bibitem{Demekhov}\textit{Demekhov A.G., Trakhtengerts V.Y., Mogilevsky M.M., and Zelenyi L.M.} // Adv.~Sp.~Res. 2003. Volume 32, p. 355. %found
-
   \bibitem{InanBellBortnik}\textit{Inan U.S., Bell T.F., Bortnik J. et al.} // J.~Geophys.~Res. 2003. Volume 108, p. 1186.%found
+  \bibitem{Holzworth}\textit{Holzworth R.H., Koons H.C.} // J.~Geophys.~Res. 1981. Volume 86, pp. 853--857 
+  \bibitem{HAARP}\textit{Platino M., Inan U.S., Bell T.F., et al.} // Ann.~Geophys. 2004. Volume 22, p. 2643. %found
   \end{thebibliography}
-\end{frame}
-
-\begin{frame}\frametitle{Методы генерации ОНЧ волн в околоземной плазме}
-  \begin{itemize}
-    \small
-    \item Эффективность возбуждения свистовых волн с использованием компактных спутниковых антенных систем невелика вследствие больших длин волн излучения.
-    \item Использование наземных СДВ-станций сопряжено с  серьезными трудностями для поддержания их функциональности, обусловленными, в основном,  большой общей длиной используемых антенн (до 20 км)~\cite{SPBEACON}. 
-      \item  Один из путей повышения эффективности генерации низкочастотных волн состоит в создании протяженных излучающих токовых систем непосредственно  в околоземной плазме~~\cite{Holzworth, HAARP},
-  \end{itemize}
-
-  \begin{thebibliography}{9}
-    \tiny
-    \bibitem{SPBEACON}\textit{Helliwell R.A.} // Rev. of Geophysics. 1988. Volume 26, p. 551. %ground-based ULF radiation system on South Pole
-    \bibitem{Holzworth}\textit{Holzworth R.H., Koons H.C.} // J.~Geophys.~Res. 1981. Volume 86, pp. 853--857 
-
-    \bibitem{HAARP}\textit{Platino M., Inan U.S., Bell T.F., et al.} // Ann.~Geophys. 2004. Volume 22, p. 2643. %found
-   \end{thebibliography}
 \end{frame}
 
 \begin{frame}\frametitle{Ускорение электронов в ближней зоне антенных систем космического базирования}
   \begin{columns}
     \begin{column}{6cm}
       \small
-      В данной работе  предлагается использовать параметрический метод генерации волн свистового диапазона с использованием традиционных антенных систем, размещаемых на КА. В качестве основного механизма генерации предлагается использовать эффект резонансного ускорения электронов под воздействием ВЧ импульса накачки в условиях электронного-циклотронного резонанса~\cite{Galperin}.
+      В данной работе  предлагается использовать параметрический метод генерации волн свистового диапазона с использованием традиционных антенных систем, размещаемых на КА. В качестве основного механизма генерации предлагается использовать эффект резонансного ускорения электронов под воздействием амплитудно-модулированной ВЧ накачки в условиях электронного-циклотронного резонанса~\cite{Galperin}.
       \vspace{1cm}
 \begin{thebibliography}{9}
     \tiny
@@ -74,29 +56,30 @@
   \end{thebibliography}
     \end{column}
     \begin{column}{5cm}
-      \begin{overprint}
-        \includegraphics[scale=0.5]{ecr_3}    
-      \end{overprint}
+
+      \begin{figure}
+        \centering
+        \small
+        \def\svgwidth{130pt} % sets the image width, this is optional
+        \input{intercosmos.tex}
+      \end{figure}
     \end{column}
   \end{columns}
   
 \end{frame}
 
-\begin{frame}\frametitle{Диамагнитный эффект}
+\begin{frame}\frametitle{Параметрическая антенна}
   \small
-\begin{itemize}
-  \item  В условиях ЭЦР электроны увеличивают свою поперечную энергию и приобретают дополнительный магнитный момент, в плазме наблюдается диамагнитный эффект: уменьшение индукции внешнего магнитного поля в области, содержащей быстрые частицы.
-  \item Если ВЧ сигнал, подводимый к антенне, модулирован по амплитуде с частотой $f_{m}$, то поток ускоренных электронов, и, соответственно, наведенный в возмущенной области плазмы магнитный момент изменяются с периодом модуляции.
-\end{itemize}
- В результате, протяженная область пространства, в которую из ближней зоны передатчика поступает модулированный поток ускоренных по поперечной энергии электронов, может выступать в роли <<бестелесной>> антенны, излучающей волны на частоте модуляции в окружающую плазму.
-\end{frame}
-
-\begin{frame}\frametitle{Достоинства метода}
-  \small
+  \begin{figure}
+    \centering
+    \small
+    \def\svgwidth{250pt} % sets the image width, this is optional
+    \input{bodyless.tex}
+  \end{figure}
   \begin{itemize}
-    \item Геометрические размеры «параметрической» антенны могут быть очень велики, что повышает эффективность генерации НЧ волн.
-    \item Из-за диамагнитного эффекта в возмущенной области плазмы формируется крупномасштабная система замкнутых поперечных токов – реализуются условия для возбуждения НЧ волн электромагнитного типа (например, свистовых или альфвеновских).
-    \item  Имеется возможность перестройки частоты НЧ излучения в широком диапазоне.  
+    \small
+  \item Из-за диамагнитного эффекта в возмущенной области плазмы формируется крупномасштабная система замкнутых поперечных токов – реализуются условия для возбуждения НЧ волн электромагнитного типа (например, свистовых или альфвеновских).
+  \item  Имеется возможность перестройки частоты НЧ излучения в широком диапазоне.  
   \end{itemize}
 \end{frame}
 
@@ -112,26 +95,26 @@
 %\end{frame}
 
 \section{Лабораторные эксперименты}
-\begin{frame}\frametitle{Плазменный стенд <<Крот>>}
-  \small
-  \begin{tabular}{|l|l|}
-    \hline
-    \multirow{4}{*}{Индукционный ВЧ источник плазмы} & f = 4 МГц\\
-     & 4 генератора\\
-     & P = 1 МВт каждый\\
-     & $t_p=1.5$\,мс\\\hline
-    \multirow{3}{*}{Источник магнитного поля} & Емкостной акопитель\\
-    & $E=1$\,МДж\\
-    & $B_0=1\div1000$\,Гс\\\hline
-    Предельный вакуум & $3\cdot{}10^{-6}$\,Торр\\
-    \hline
-    Рабочий газ & $Ar$, $He$\\\hline
-    Давление рабочего газа & $p=1\cdot{}10^{-4}\div{}5\cdot{}10^{-3}$\,Торр\\\hline
-    Размеры замагниченной плазмы & длина 5 м, диаметр 1.5 м\\\hline
-    Концентрация плазмы & $n_{e}=10^{6}\div{}10^{13}$\,см$^{-3}$\\\hline
-    Температура электронов & $T_e=0.1\div{}10$\, эВ\\\hline
-  \end{tabular}
-\end{frame}
+%\begin{frame}\frametitle{Плазменный стенд <<Крот>>}
+%  \small
+%  \begin{tabular}{|l|l|}
+%    \hline
+%    \multirow{4}{*}{Индукционный ВЧ источник плазмы} & f = 4 МГц\\
+%     & 4 генератора\\
+%     & P = 1 МВт каждый\\
+%     & $t_p=1.5$\,мс\\\hline
+%    \multirow{3}{*}{Источник магнитного поля} & Емкостной накопитель\\
+%    & $E=1$\,МДж\\
+%    & $B_0=1\div1000$\,Гс\\\hline
+%    Предельный вакуум & $3\cdot{}10^{-6}$\,Торр\\
+%    \hline
+%    Рабочий газ & $Ar$, $He$\\\hline
+%    Давление рабочего газа & $p=1\cdot{}10^{-4}\div{}5\cdot{}10^{-3}$\,Торр\\\hline
+%    Размеры замагниченной плазмы & длина 5 м, диаметр 1.5 м\\\hline
+%    Концентрация плазмы & $n_{e}=10^{6}\div{}10^{13}$\,см$^{-3}$\\\hline
+%    Температура электронов & $T_e=0.1\div{}10$\, эВ\\\hline
+%  \end{tabular}
+%\end{frame}
 
 \begin{frame}\frametitle{Параметры модельного лабораторного эксперимента}
    \small
@@ -156,13 +139,12 @@
   
 \end{frame}
 
-
-\begin{frame}\frametitle{Схема экспериментов}
+\begin{frame}\frametitle{Описание экспериментов}
   \begin{columns}
     \begin{column}{5cm}
       \begin{itemize}
-        \item Диагностика концентрации плазмы --- зонд с СВЧ-резонатором~\cite{Stenzel,Yanin}.
-        \item Диагностика электронной температуры --- двойной зонд~\cite{UHF_probe}. 
+        \item Измерение концентрации плазмы --- зонд с СВЧ-резонатором~\cite{Stenzel,Yanin}.
+        \item Измерение электронной температуры --- двойной зонд~\cite{UHF_probe}. 
       \end{itemize}
   \vspace{1cm}
       \begin{thebibliography}{9}
@@ -187,87 +169,22 @@
 \section{Экспериментальные результаты}
 \begin{frame}\frametitle{Диамагнитный сигнал в плазме}
   \begin{columns}
-    \begin{column}{5cm}      
-      \small
-      \begin{itemize}
-      \item $(а)$ Импульс накачки мощностью $P\approx{}250$\,Вт, подаваемый на рамочную антенну
-        \item $(б)$ неинтегрированный сигнал с магнитного зонда
-        \item $(в)$ полное возмущение $\Delta{}B$ внешнего магнитного поля в условиях ЭЦР на расстоянии $z=3.5$\,см напротив витков антенны 
-          \end{itemize}
-       \vspace{0.3cm}
-      \hspace{0.7cm}$n_{e}=10^{10}$\,см$^{-3}$, $B_{0}$ = 25$\,Гс$
-
-      \hspace{0.7cm}$P\approx{}250$\,Вт
-      \vspace{0.3cm}
-
-      \hspace{0.7cm}
-      \begin{tabular}{|c|}
-        \hline
-        \\
-        $\Delta{}B/B_{0}\sim{}1\%$\\
-        \\
-        \hline
-        \end{tabular}
-      \vspace{2cm}
-    \end{column}
-    \begin{column}{8cm}
+    \begin{column}{6cm}      
       \begin{figure}
         \centering
         \small
         \def\svgwidth{160pt} % sets the image width, this is optional
         \input{pulse_demo.tex}
       \end{figure}
-      \vspace{1.5cm}
     \end{column}
-  \end{columns}
-\end{frame}
-
-\begin{frame}\frametitle{Диамагнитный эффект как функция $f/f_{ce}$ и мощности передатчика $P$}
-
-  \begin{columns}
-    \begin{column}{6cm}      
-      \small
-      \begin{itemize}
-      \item  Основной резонанс ($f_{ce}$) несимметрично уширен в область низких частот, что связано с возбуждением антенной при $f<f_{ce}$ распространяющихся ВЧ волн свистового диапазона.
-      \item Резонанс на второй гармонике ($2f_{ce}$) находится в области непрозрачности плазмы для электромагнитного излучения, $f_{ce}<f<f_{pe}$. Симметричное уширение этого резонанса обусловлено конечным временем пролета ускоряемых электронов через ближнюю зону антенны с невозмущенной продольной (тепловой) скоростью.
-      \end{itemize}
-    \end{column}
-    \begin{column}{7cm}
+    \begin{column}{6cm}
       \begin{figure}
         \centering
         \small
         \def\svgwidth{160pt} % sets the image width, this is optional
         \input{fig1.tex}
       \end{figure}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-\begin{frame}\frametitle{Параметрическая генерация НЧ волн}
-  \begin{columns}
-    \begin{column}{6cm}      
-      \small
-      \begin{itemize}
-        \item $(а)$ НЧ сигналы, регистрируемые при подаче на антенну амплитудно--модулированного с частотой $f_{m}$ импульса ВЧ накачки в условиях ЭЦР, при различном радиальном удалении $r$ магнитного зонда от антенны ($f_{m} = 400$\, кГц, $f=66.5$\,МГц $\simeq f_{ce}$, $P\simeq 300$\,Вт). 
-          \item $(б)$ Зависимость поперечной скорости распространения $v_{\perp}$ НЧ возмущений внешнего магнитного поля от частоты модуляции $f_{m}$ импульса ВЧ накачки.
-      \end{itemize}
-      \vspace{0.5cm}
-       \hspace{0.7cm}
-       \begin{tabular}{|m{5cm}|}
-         \hline
-         Наблюдается возбуждение волн конической рефракции.\\
-         \hline
-         \end{tabular}
- \vspace{1.5cm}
-    \end{column}
-    \begin{column}{7cm}
-      \begin{figure}
-        \centering
-        \tiny
-        \def\svgwidth{105pt} % sets the image width, this is optional
-        \input{phase_composite.tex}
-      \end{figure}
-      \vspace{1cm}
+      \vspace{1.5cm}
     \end{column}
   \end{columns}
 \end{frame}
@@ -293,4 +210,34 @@
     \end{column}
   \end{columns}
 \end{frame}
+
+\begin{frame}\frametitle{Свойства генерируемых НЧ волн}
+  \begin{columns}
+    \begin{column}{5cm}
+      \begin{figure}
+        \centering
+        \tiny
+        \def\svgwidth{105pt} % sets the image width, this is optional
+        \input{phase_composite.tex}
+      \end{figure}
+     \vspace{3cm}
+      \small
+    \end{column}
+ \begin{column}{6cm}      
+      \small
+      \begin{figure}
+        \centering
+        \tiny
+        \def\svgwidth{110pt} % sets the image width, this is optional
+        \input{h_separation.tex}
+      \end{figure}
+          \vspace{3cm}
+     \end{column}
+  \end{columns}
+
+\end{frame}
+
+\section{Результаты численного моделирования}
+\begin{frame}
+\end{fram}
 \end{document}

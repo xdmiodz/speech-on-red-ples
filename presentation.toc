@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.07pt}
+\select@language {russian}
+\beamer@sectionintoc {1}{\IeC {\CYRV }\IeC {\cyrv }\IeC {\cyre }\IeC {\cyrd }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{2}{0}{1}
+\beamer@sectionintoc {2}{\IeC {\CYRL }\IeC {\cyra }\IeC {\cyrb }\IeC {\cyro }\IeC {\cyrr }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyro }\IeC {\cyrr }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyre } \IeC {\cyrerev }\IeC {\cyrk }\IeC {\cyrs }\IeC {\cyrp }\IeC {\cyre }\IeC {\cyrr }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyrt }\IeC {\cyrery }}{5}{0}{2}
+\beamer@sectionintoc {3}{\IeC {\CYREREV }\IeC {\cyrk }\IeC {\cyrs }\IeC {\cyrp }\IeC {\cyre }\IeC {\cyrr }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrl }\IeC {\cyrsftsn }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyre } \IeC {\cyrr }\IeC {\cyre }\IeC {\cyrz }\IeC {\cyru }\IeC {\cyrl }\IeC {\cyrsftsn }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyrery }}{7}{0}{3}
