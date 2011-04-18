@@ -23,7 +23,7 @@
 \begin{document}
 
 \maketitle
-
+\tableofcontents
 \section{Введение}
 \begin{frame}\frametitle{Роль НЧ волн в околоземной Земли}
   \small
@@ -238,6 +238,54 @@
 \end{frame}
 
 \section{Результаты численного моделирования}
-\begin{frame}
-\end{fram}
+\begin{frame}\frametitle{Параметры численного моделирования}
+ \begin{columns}
+   \small
+   \begin{column}{6cm}      
+     \begin{tabular}{|m{3cm}|l|}
+       \hline
+       Число частиц & $\approx{}10$\,млн.\\
+       \hline
+       Число циклов & $>100\,000$\\
+       \hline
+       Начальная энергия частиц & 1 эВ\\
+       \hline
+       $f_{ce}$ & 65 МГц\\
+       \hline
+       $f_{m}$ & $400\div{}600$\,кГц\\
+       \hline
+       $E$ & $0.5\div{}3$\,В/см\\
+       \hline
+       Скважность импульсов & $2\div{}4$\\
+       \hline
+      \end{tabular}
+     %\vspace{4cm}
+    \end{column}
+    \begin{column}{6cm}
+      \begin{figure}
+        \centering
+        \small
+        \def\svgwidth{160pt} % sets the image width, this is optional
+        \input{single_pulse.tex}
+      \end{figure}
+     %\vspace{3cm}
+      \small
+    \end{column}
+ \end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Амплитудно-модулированная ВЧ накачка}
+  \begin{columns}
+   \begin{column}{6cm}
+      \begin{figure}
+        \centering
+        \small
+        \def\svgwidth{160pt} % sets the image width, this is optional
+        \input{fm_600_khz.tex}
+      \end{figure}
+     %\vspace{3cm}
+      \small
+    \end{column}
+\end{columns}
+ \end{frame}
 \end{document}
